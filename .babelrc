@@ -1,0 +1,48 @@
+{
+  "env": {
+    "test":{
+      "presets": [
+        ["env", {
+          "targets": {
+            "browsers":  ["last 2 versions"]
+          }
+        }],
+        "react",
+        "flow"
+      ],
+      "plugins": [
+        ["transform-class-properties", { "spec": true }, "external-helpers"]
+      ]
+    },
+    "es":{
+      "presets": [
+        ["env", {
+          "targets": {
+            "browsers":  ["last 2 versions"]
+          },
+          "modules": false
+        }],
+        "react",
+        "flow"
+      ],
+      "plugins": [
+        ["transform-class-properties", { "spec": true }, "external-helpers"]
+      ]
+    },
+    "cjs": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "browsers":  ["last 2 versions"]
+          },
+          "modules": false
+        }],
+        "react",
+        "flow"
+      ],
+      "plugins": [
+        ["transform-class-properties", { "spec": true }, "external-helpers"]
+      ]
+    }
+  }
+}
