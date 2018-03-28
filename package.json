@@ -1,0 +1,72 @@
+{
+  "name": "redux-vanilla",
+  "version": "0.0.1",
+  "description": "react redux vailla binding.",
+  "main": "build/index.js",
+  "jsnext:main": "build/index.esm.js",
+  "module": "build/index.esm.js",
+  "types": "index.d.ts",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "prepare": "yarn build && yarn build:flow",
+    "flow": "flow",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage --ci --runInBand",
+    "codecov": "codecov -t b8ed6a1e-0f73-49e8-9579-514e1171b75c",
+    "rollup": "rollup -c",
+    "build:flow": "flow-copy-source -v -i '*.test.js' src build",
+    "build": "babel src -d build --ignore '**/*.test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryota-murakami/redux-vanilla.git"
+  },
+  "author": "ryota-murakami <dojce1048@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryota-murakami/redux-vanilla/issues"
+  },
+  "homepage": "https://github.com/ryota-murakami/redux-vanilla#readme",
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,mjs}"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "codecov": "^3.0.0",
+    "eslint": "^4.18.2",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "^0.68.0",
+    "flow-copy-source": "^1.3.0",
+    "jest": "^22.4.2",
+    "prettier": "^1.11.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "redux": "^3.7.2",
+    "regenerator-runtime": "^0.11.1",
+    "rollup": "^0.57.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-flow": "^1.1.1",
+    "rollup-plugin-node-resolve": "^3.2.0"
+  },
+  "dependencies": {
+    "create-react-context": "^0.2.1"
+  }
+}
