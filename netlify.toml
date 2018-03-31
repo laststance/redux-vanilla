@@ -3,5 +3,5 @@
 
 [build]
   base  = "example"
-  publish = "build"
+  publish = "example/build"
   command = "yarn build"
