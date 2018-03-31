@@ -21,7 +21,9 @@
     "codecov": "codecov -t $CODECOV_TOKEN",
     "build:commonjs": "NODE_ENV=cjs rollup -c -o lib/index.js",
     "build:es": "NODE_ENV=es rollup -c -o es/index.js",
-    "build": "yarn build:commonjs && yarn run build:es"
+    "build": "yarn build:commonjs && yarn run build:es",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "repository": {
     "type": "git",
@@ -47,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "all-contributors-cli": "^4.11.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",

@@ -12,8 +12,8 @@
 <a href="https://github.com/prettier/prettier"><img src="https://camo.githubusercontent.com/c83b8df34339bd302b7fd3fbb631f99ba25f87f8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64655f7374796c652d70726574746965722d6666363962342e737667" alt="code style: prettier" data-canonical-src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" style="max-width:100%;"></a>
 <a href="https://codecov.io/gh/ryota-murakami/redux-vanilla" rel="nofollow"><img src="https://camo.githubusercontent.com/bb5967dbca9dfe8c5148a08dadff95dd3697d5a1/68747470733a2f2f636f6465636f762e696f2f67682f72796f74612d6d7572616b616d692f72656475782d76616e696c6c612f6272616e63682f6d61737465722f67726170682f62616467652e737667" alt="codecov" data-canonical-src="https://codecov.io/gh/ryota-murakami/redux-vanilla/branch/master/graph/badge.svg" style="max-width:100%;"></a>
 <a href="https://twitter.com/malloc007"><img src="https://img.shields.io/twitter/follow/malloc007.svg?style=social&label=Follow" alt="Follow on Twitter"></a>
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 </p>
-
 > :ice_cream:Zero Abstraction React Redux binding library
 
 ## Motivation
@@ -200,6 +200,18 @@ export defaunt connect(App)
 ## Inspiration
 - [react-redux](https://github.com/reactjs/react-redux)
 - [counter-vanilla](https://github.com/reactjs/redux/blob/master/examples/counter-vanilla/index.html)
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars1.githubusercontent.com/u/5501268?s=400&u=7bf6b1580b95930980af2588ef0057f3e9ec1ff8&v=4" width="100px;"/><br /><sub><b>ryota-murakami</b></sub>](http://ryota-murakami.github.io/)<br />[💻](https://github.com/ryota-murakami/redux-vanilla/ryota-murakami/redux-vanilla/commits?author=ryota-murakami "Code") [📖](https://github.com/ryota-murakami/redux-vanilla/ryota-murakami/redux-vanilla/commits?author=ryota-murakami "Documentation") [⚠️](https://github.com/ryota-murakami/redux-vanilla/ryota-murakami/redux-vanilla/commits?author=ryota-murakami "Tests") |
+| :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
 
 ## LICENSE
 MIT
