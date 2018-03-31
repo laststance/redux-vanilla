@@ -1,10 +1,16 @@
 {
   "name": "redux-vanilla",
-  "version": "0.0.1-beta1",
+  "version": "0.0.1-beta2",
   "description": "Zero Abstraction React Redux binding library",
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "index.d.ts",
+  "files": [
+    "es",
+    "lib",
+    "src",
+    "index.d.ts"
+  ],
   "scripts": {
     "flow": "flow",
     "lint": "eslint src",
