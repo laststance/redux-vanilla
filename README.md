@@ -12,8 +12,9 @@
 <a href="https://github.com/prettier/prettier"><img src="https://camo.githubusercontent.com/c83b8df34339bd302b7fd3fbb631f99ba25f87f8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64655f7374796c652d70726574746965722d6666363962342e737667" alt="code style: prettier" data-canonical-src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" style="max-width:100%;"></a>
 <a href="https://codecov.io/gh/ryota-murakami/redux-vanilla" rel="nofollow"><img src="https://camo.githubusercontent.com/bb5967dbca9dfe8c5148a08dadff95dd3697d5a1/68747470733a2f2f636f6465636f762e696f2f67682f72796f74612d6d7572616b616d692f72656475782d76616e696c6c612f6272616e63682f6d61737465722f67726170682f62616467652e737667" alt="codecov" data-canonical-src="https://codecov.io/gh/ryota-murakami/redux-vanilla/branch/master/graph/badge.svg" style="max-width:100%;"></a>
 <a href="https://twitter.com/malloc007"><img src="https://img.shields.io/twitter/follow/malloc007.svg?style=social&label=Follow" alt="Follow on Twitter"></a>
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+ <a href="/ryota-murakami/redux-vanilla/blob/master/README.md#contributors"><img src="https://camo.githubusercontent.com/5accfd193468f1ae11f72c104809e8e3125646e2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f616c6c5f636f6e7472696275746f72732d312d6f72616e67652e7376673f7374796c653d666c61742d737175617265" alt="All Contributors" data-canonical-src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" style="max-width:100%;"></a>
 </p>
+
 > :ice_cream:Zero Abstraction React Redux binding library
 
 ## Motivation
