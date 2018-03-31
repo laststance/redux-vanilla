@@ -31,6 +31,7 @@ const store = createStore(
     : f => f
 )
 
+// 1. SetUp Provider with Redux store
 ReactDOM.render(
   <Provider store={store}>
     <div>

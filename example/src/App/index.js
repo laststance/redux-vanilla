@@ -1,57 +1,34 @@
 import React, { Component } from 'react'
 import { connect } from 'redux-vanilla'
-import styled from 'styled-components'
-import { Container } from './Container'
-import { Header } from './Header'
-import { Footer } from './Footer'
-
-const css = {
-  flexContainer: {
-    height: '60px',
-    width: '30%',
-    margin: '0 auto',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center'
-  },
-  flexItem: {
-    upVoteCount: { color: 'green', flexGrow: 1 },
-    downVoteCount: { color: 'red', flexGrow: 1 },
-    upVoteBtn: { flexGrow: 1, fontSize: '20px' },
-    downVoteBtn: { flexGrow: 1, fontSize: '20px' }
-  }
-}
+import { Container, Secton } from './layout'
+import { Header, Footer } from './component'
+import { UpVoteCount, DownVoteCount, UpVoteBtn, DownVoteBtn } from './element'
 
 class App extends Component {
   render() {
-    const { store } = this.props
-    const state = store.getState()
+    // 3. receive raw Redux store & state/dispatch shorthand. enjoy!
+    const { store, state, dispatch } = this.props
 
     return (
       <Container>
         <Header />
-        <section style={css.flexContainer}>
-          <h1 style={css.flexItem.upVoteCount}>{state.upVote}</h1>
-          <h1 style={css.flexItem.downVoteCount}>{state.downVote}</h1>
-        </section>
-        <section style={css.flexContainer}>
-          <button
-            onClick={() => store.dispatch({ type: 'UP_VOTE' })}
-            style={css.flexItem.upVoteBtn}
-          >
+        <Secton>
+          <UpVoteCount>{state.upVote}</UpVoteCount>
+          <DownVoteCount>{store.getState().downVote}</DownVoteCount>
+        </Secton>
+        <Secton>
+          <UpVoteBtn onClick={() => dispatch({ type: 'UP_VOTE' })}>
             + UpVote
-          </button>
-          <button
-            onClick={() => store.dispatch({ type: 'DOWN_VOTE' })}
-            style={css.flexItem.downVoteBtn}
-          >
+          </UpVoteBtn>
+          <DownVoteBtn onClick={() => store.dispatch({ type: 'DOWN_VOTE' })}>
             + DownVote
-          </button>
-        </section>
+          </DownVoteBtn>
+        </Secton>
         <Footer />
       </Container>
     )
   }
 }
 
+// 2. connect to React Component
 export default connect(App)
