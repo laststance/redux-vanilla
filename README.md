@@ -14,9 +14,192 @@
 <a href="https://twitter.com/malloc007"><img src="https://img.shields.io/twitter/follow/malloc007.svg?style=social&label=Follow" alt="Follow on Twitter"></a>
 </p>
 
-> Zero Abstraction React Redux binding library
+> :ice_cream:Zero Abstraction React Redux binding library
+
+## Motivation
+`Redux Vanilla` provide primitive Redux store object and state/dispatch short hand as a props.  
+you can feel free access raw store as well as [counter-vanilla](https://github.com/reactjs/redux/blob/master/examples/counter-vanilla/index.html) in redux official repository.
+
+```js
+class App extends Component {
+  render() {
+    const { store, state, dispatch } = this.props
+    return (
+      <div>
+
+        <p>{store.getState().count}</p>
+        <button onClick={() => store.dispatch({ type: 'INCLEMENT' })} />
+
+        <p>{state.count}</p>
+        <button onClick={() => dispatch({ type: 'INCLEMENT' })} />
+        
+      </div>
+    )
+  }
+}
+
+export defaunt connect(App)
+```
+
+this means you can take a **raw Redux from props.**:tada:  
+without too massive Redux Pattarn, Practice combination, such as fllowing.
+
+- Directory Structure
+- File Separation
+- ActionCreator
+- MapStore..Uh-oh! MapStateToProps, MapDispatchToProps
+- like redux-thunk/redux-saga like middlewares alongside how to async handle
+
+anyway, **Redux itself is not difficult.**  
+but **massive Redux Pattarn, Practice combination is obviously overkill for beginner.**
+
+The purpose of `Redux Vanilla` is facilitate gaining Redux(Flux Dataflow) benefit, without every around complexity. 
 
 ## install
+- reuqirement: react redux
 ```
-yarn add redux-vanilla
+yarn add react redux redux-vanilla
 ```
+
+## Usage
+
+index.js
+```js
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
+import { createStore } from 'redux'
+import { Provider } from 'redux-vanilla'
+
+const initialState = {
+  upVote: 0,
+  downVote: 0
+}
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'UP_VOTE':
+      state.upVote++
+      return { ...state }
+    case 'DOWN_VOTE':
+      state.downVote++
+      return { ...state }
+    default:
+      return state
+  }
+}
+
+const store = createStore(
+  reducer,
+  initialState,
+  window.__REDUX_DEVTOOLS_EXTENSION__ !== undefined
+    ? window.__REDUX_DEVTOOLS_EXTENSION__()
+    : f => f
+)
+
+// 1. SetUp Provider with Redux store
+ReactDOM.render(
+  <Provider store={store}>
+    <div>
+      <App />
+    </div>
+  </Provider>,
+  document.getElementById('root')
+)
+```
+
+App/index.js
+```js
+import React, { Component } from 'react'
+import { connect } from 'redux-vanilla'
+import { Container, Secton } from './layout'
+import { Header, Footer } from './component'
+import { UpVoteCount, DownVoteCount, UpVoteBtn, DownVoteBtn } from './element'
+
+class App extends Component {
+  render() {
+    // 3. receive raw Redux store & state/dispatch shorthand. enjoy!
+    const { store, state, dispatch } = this.props
+
+    return (
+      <Container>
+        <Header />
+        <Secton>
+          <UpVoteCount>{state.upVote}</UpVoteCount>
+          <DownVoteCount>{store.getState().downVote}</DownVoteCount>
+        </Secton>
+        <Secton>
+          <UpVoteBtn onClick={() => dispatch({ type: 'UP_VOTE' })}>
+            + UpVote
+          </UpVoteBtn>
+          <DownVoteBtn onClick={() => store.dispatch({ type: 'DOWN_VOTE' })}>
+            + DownVote
+          </DownVoteBtn>
+        </Secton>
+        <Footer />
+      </Container>
+    )
+  }
+}
+
+// 2. connect to React Component
+export default connect(App)
+```
+
+the repository contain [example](https://github.com/ryota-murakami/redux-vanilla/tree/master/example) and published [Live Demo](https://master--frosty-jennings-c285b3.netlify.com/):computer:  
+you could see [redux-devtools chrome extention](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=ja) on the page.
+
+## API
+
+### `<Provider store={Store>} />`
+
+use as Parent Component against connect Component.
+`store` only accept redux `createStore()` return Object.  
+also can't work without store props.
+
+```js
+const store = createStore(reducer)
+
+ReactDOM.render(
+  <Provider store={store}>
+      <App />
+  </Provider>,
+  document.getElementById('root')
+)
+```
+
+### `connect(component: ComponentType<any>)`
+
+connected Component will recive following three props.
+
+- `store`: Redux store object created by `createStore()`.
+- `state`: `store.getState()` short hand, it doesn't any customize by `Redux Vanilla`
+- `dispatch`: `store.dispatch` short hand, it doesn't any customize by `Redux Vanilla`
+
+```js
+class App extends Component {
+  render() {
+    const { store, state, dispatch } = this.props
+    return (
+      <div>
+        // raw
+        <p>{store.getState().count}</p>
+        <button onClick={() => store.dispatch({ type: 'INCLEMENT' })} />
+        // short hand
+        <p>{state.count}</p>
+        <button onClick={() => dispatch({ type: 'INCLEMENT' })} />
+      </div>
+    )
+  }
+}
+
+export defaunt connect(App)
+```
+
+## Inspiration
+- [react-redux](https://github.com/reactjs/react-redux)
+- [counter-vanilla](https://github.com/reactjs/redux/blob/master/examples/counter-vanilla/index.html)
+
+## LICENSE
+MIT
