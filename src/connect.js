@@ -23,6 +23,17 @@ export const connect = (WrappedComponent: ComponentType<any>) =>
     }
 
     render() {
-      return <WrappedComponent store={this.store} {...this.props} />
+      const store = this.store
+      const state = store.getState()
+      const dispatch = store.dispatch
+
+      return (
+        <WrappedComponent
+          store={store}
+          state={state}
+          dispatch={dispatch}
+          {...this.props}
+        />
+      )
     }
   }

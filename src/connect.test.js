@@ -46,6 +46,76 @@ describe('connect()', () => {
     expect(higherOrderComponent.context.store).toBe(store)
   })
 
+  it('pass store as props to connected Component', () => {
+    const store = _createStore()
+    class Child extends Component {
+      render() {
+        expect(this.props.store).toBe(store)
+        return <div />
+      }
+    }
+
+    const ConnectedChild = connect(Child)
+    TestUtils.renderIntoDocument(
+      <Provider store={store}>
+        <ConnectedChild />
+      </Provider>
+    )
+  })
+
+  it('pass state as props to connected Component', () => {
+    const store = _createStore()
+    class Child extends Component {
+      render() {
+        expect(this.props.state).toBe(store.getState())
+        return <div />
+      }
+    }
+
+    const ConnectedChild = connect(Child)
+    TestUtils.renderIntoDocument(
+      <Provider store={store}>
+        <ConnectedChild />
+      </Provider>
+    )
+  })
+
+  it('pass dispatch as props to connected Component', () => {
+    const store = _createStore()
+    class Child extends Component {
+      render() {
+        expect(this.props.dispatch).toBe(store.dispatch)
+        return <div />
+      }
+    }
+
+    const ConnectedChild = connect(Child)
+    TestUtils.renderIntoDocument(
+      <Provider store={store}>
+        <ConnectedChild />
+      </Provider>
+    )
+  })
+
+  it('work when deep child node', () => {
+    const store = _createStore()
+    const One = () => <div />
+    const Two = () => <div />
+    const Three = props => {
+      expect(props.store).toBe(store)
+      return <div />
+    }
+    TestUtils.renderIntoDocument(
+      <Provider store={store}>
+        <One>
+          <Two>
+            <Three />
+          </Two>
+        </One>
+      </Provider>
+    )
+  })
+
   it('work when passing SFC', () => {
     const store = _createStore()
     const Child = props => <h1>{props.store.getState().count} count</h1>
