@@ -36,7 +36,8 @@
     ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}",
-      "!src/index.js"
+      "!src/index.js",
+      "!src/testutils.js"
     ]
   },
   "devDependencies": {
