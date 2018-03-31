@@ -5753,9 +5753,9 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^0.4.2"
 
-redux-vanilla@^0.0.1-beta1:
-  version "0.0.1-beta1"
-  resolved "https://registry.yarnpkg.com/redux-vanilla/-/redux-vanilla-0.0.1-beta1.tgz#ee6bfa7ac7a21fafd299ae6c4d207325157a03d6"
+redux-vanilla@^0.0.1-beta2:
+  version "0.0.1-beta2"
+  resolved "https://registry.yarnpkg.com/redux-vanilla/-/redux-vanilla-0.0.1-beta2.tgz#ad63921e0bb3b0bae6bb4204974686feb21575bc"
 
 redux@^3.7.2:
   version "3.7.2"

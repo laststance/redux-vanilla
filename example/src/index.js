@@ -4,7 +4,6 @@ import './index.css'
 import App from './App'
 import { createStore } from 'redux'
 import { Provider } from 'redux-vanilla'
-import registerServiceWorker from './registerServiceWorker'
 
 const initialState = {
   upVote: 0,
@@ -40,4 +39,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root')
 )
-registerServiceWorker()

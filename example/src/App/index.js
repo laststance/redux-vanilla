@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'redux-vanilla'
-import logo from './logo.svg'
-import './App.css'
+import styled from 'styled-components'
+import { Container } from './Container'
+import { Header } from './Header'
+import { Footer } from './Footer'
 
 const css = {
   flexContainer: {
@@ -26,11 +28,8 @@ class App extends Component {
     const state = store.getState()
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+      <Container>
+        <Header />
         <section style={css.flexContainer}>
           <h1 style={css.flexItem.upVoteCount}>{state.upVote}</h1>
           <h1 style={css.flexItem.downVoteCount}>{state.downVote}</h1>
@@ -49,10 +48,8 @@ class App extends Component {
             + DownVote
           </button>
         </section>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        <Footer />
+      </Container>
     )
   }
 }
