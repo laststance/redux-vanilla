@@ -13,3 +13,10 @@
 <a href="https://codecov.io/gh/ryota-murakami/redux-vanilla" rel="nofollow"><img src="https://camo.githubusercontent.com/bb5967dbca9dfe8c5148a08dadff95dd3697d5a1/68747470733a2f2f636f6465636f762e696f2f67682f72796f74612d6d7572616b616d692f72656475782d76616e696c6c612f6272616e63682f6d61737465722f67726170682f62616467652e737667" alt="codecov" data-canonical-src="https://codecov.io/gh/ryota-murakami/redux-vanilla/branch/master/graph/badge.svg" style="max-width:100%;"></a>
 <a href="https://twitter.com/malloc007"><img src="https://img.shields.io/twitter/follow/malloc007.svg?style=social&label=Follow" alt="Follow on Twitter"></a>
 </p>
+
+> Zero Abstraction React Redux binding library
+
+## install
+```
+yarn add redux-vanilla
+```
