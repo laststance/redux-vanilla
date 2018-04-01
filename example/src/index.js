@@ -34,9 +34,7 @@ const store = createStore(
 // 1. SetUp Provider with Redux store
 ReactDOM.render(
   <Provider store={store}>
-    <div>
-      <App />
-    </div>
+    <App />
   </Provider>,
   document.getElementById('root')
 )
