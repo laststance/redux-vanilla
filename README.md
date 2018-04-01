@@ -18,6 +18,10 @@
 > :ice_cream:Zero Abstraction React Redux binding library
 
 ## Motivation
+
+> if you use [react-redux](https://github.com/reactjs/react-redux) already, you can do almost exacty the same with: `connect((store) => store)(Component);` 
+> thanks [reactiflux](https://www.reactiflux.com/) community!
+
 `Redux Vanilla` provide primitive Redux store object and state/dispatch short hand as a props.  
 you can feel free access raw store as well as [counter-vanilla](https://github.com/reactjs/redux/blob/master/examples/counter-vanilla/index.html) in redux official repository.
 
