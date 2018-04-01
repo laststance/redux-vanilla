@@ -17,6 +17,22 @@
 
 > :ice_cream:Zero Abstraction React Redux binding library
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Motivation](#motivation)
+- [install](#install)
+- [Usage](#usage)
+- [API](#api)
+  - [`<Provider store={Store>} />`](#provider-storestore-)
+  - [`connect(component: ComponentType<any>)`](#connectcomponent-componenttypeany)
+- [Inspiration](#inspiration)
+- [Contributors](#contributors)
+- [LICENSE](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Motivation
 
 > if you use [react-redux](https://github.com/reactjs/react-redux) already, you can do almost exacty the same with: `connect((store) => store)(Component);` 
