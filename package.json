@@ -11,6 +11,12 @@
     "src",
     "index.d.ts"
   ],
+  "keyword": [
+    "react",
+    "reactjs",
+    "flux",
+    "redux"
+  ],
   "scripts": {
     "flow": "flow",
     "lint": "eslint src",
