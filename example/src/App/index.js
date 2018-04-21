@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'redux-vanilla'
-import { Container, Secton } from './layout'
+import { Container, Row } from './layout'
 import { Header, Footer } from './component'
-import { UpVoteCount, DownVoteCount, UpVoteBtn, DownVoteBtn } from './element'
+import { Text, Button } from './element'
 
 class App extends Component {
   render() {
@@ -12,18 +12,18 @@ class App extends Component {
     return (
       <Container>
         <Header />
-        <Secton>
-          <UpVoteCount>{state.upVote}</UpVoteCount>
-          <DownVoteCount>{store.getState().downVote}</DownVoteCount>
-        </Secton>
-        <Secton>
-          <UpVoteBtn onClick={() => dispatch({ type: 'UP_VOTE' })}>
+        <Row>
+          <Text red>{state.upVote}</Text>
+          <Text green>{store.getState().downVote}</Text>
+        </Row>
+        <Row>
+          <Button onClick={() => dispatch({ type: 'UP_VOTE' })}>
             + UpVote
-          </UpVoteBtn>
-          <DownVoteBtn onClick={() => store.dispatch({ type: 'DOWN_VOTE' })}>
+          </Button>
+          <Button onClick={() => store.dispatch({ type: 'DOWN_VOTE' })}>
             + DownVote
-          </DownVoteBtn>
-        </Secton>
+          </Button>
+        </Row>
         <Footer />
       </Container>
     )

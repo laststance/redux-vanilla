@@ -4,7 +4,7 @@ export const Container = styled.div`
   text-align: center;
 `
 
-export const Secton = styled.div`
+export const Row = styled.div`
   heigh: 60%;
   width: 30%;
   margin: 0 auto;
