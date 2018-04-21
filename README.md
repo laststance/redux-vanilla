@@ -20,6 +20,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
+- [Example](#example)
 - [Motivation](#motivation)
 - [install](#install)
 - [Usage](#usage)
@@ -31,6 +32,10 @@
 - [LICENSE](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Example
+
+[![Edit redux-vanila-example](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/92rq9mn71r)
 
 ## Motivation
 
