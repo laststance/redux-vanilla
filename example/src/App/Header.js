@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from './logo.svg'
+import logo from './assets/logo.svg'
 
 export const Header = () => {
   const Container = styled.div`
@@ -29,17 +29,6 @@ export const Header = () => {
     <Container>
       <Img src={logo} alt="logo" />
       <H1>Welcome to React</H1>
-    </Container>
-  )
-}
-
-export const Footer = () => {
-  const Container = styled.p`
-    font-size: large;
-  `
-  return (
-    <Container>
-      To get started, edit <code>src/App.js</code> and save to reload.
     </Container>
   )
 }

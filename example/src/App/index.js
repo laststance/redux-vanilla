@@ -1,8 +1,28 @@
 import React, { Component } from 'react'
 import { connect } from 'redux-vanilla'
-import { Container, Row } from './layout'
-import { Header, Footer } from './component'
-import { Text, Button } from './element'
+import styled from 'styled-components'
+import { Header } from './Header'
+import { Footer } from './Footer'
+
+export const Container = styled.div`
+  text-align: center;
+`
+export const Row = styled.div`
+  heigh: 60%;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flexdirection: row;
+  justifycontent: center;
+`
+export const Button = styled.button`
+  flex-grow: 1;
+  font-size: 20px;
+`
+export const Text = styled.h1`
+  flex-grow: 1;
+  color: ${props => (props.red && 'red') || (props.green && 'green') || ''};
+`
 
 class App extends Component {
   render() {
