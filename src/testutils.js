@@ -1,6 +1,4 @@
-// @flow
 import { createStore } from 'redux'
-import type { Store } from 'redux'
 
 const INCREMENT = 'INCREMENT'
 
@@ -19,5 +17,4 @@ const reducer = (state, action) => {
   }
 }
 
-export const _createStore: Store<any, any> = () =>
-  createStore(reducer, initialState)
+export const _createStore = () => createStore(reducer, initialState)

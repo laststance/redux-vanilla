@@ -8,8 +8,10 @@ type Props = {
   store: Store<any, any>,
   children: Element<any>
 }
-
-export class Provider extends Component<Props> {
+type State = {
+  listener: boolean
+}
+export class Provider extends Component<Props, State> {
   static childContextTypes = {
     store: PropTypes.shape({
       subscribe: PropTypes.func.isRequired,
@@ -29,7 +31,7 @@ export class Provider extends Component<Props> {
     }
   }
 
-  constructor(props) {
+  constructor(props: Props) {
     super(props)
     if (this.isNotStoreRecived(props)) {
       throw new Error(
@@ -41,7 +43,7 @@ export class Provider extends Component<Props> {
     props.store.subscribe(observer)
   }
 
-  isNotStoreRecived(props) {
+  isNotStoreRecived(props: Props) {
     const store = props.store
     if (store === undefined) return true
     if (typeof store !== 'object') return true
