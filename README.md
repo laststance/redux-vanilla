@@ -103,11 +103,9 @@ const initialState = {
 const reducer = (state, action) => {
   switch (action.type) {
     case 'UP_VOTE':
-      state.upVote++
-      return { ...state }
+      return { ...state, upVote: state.upVote + 1 }
     case 'DOWN_VOTE':
-      state.downVote++
-      return { ...state }
+      return { ...state, downVote: state.downVote + 1 }
     default:
       return state
   }
