@@ -14,7 +14,7 @@
         "flow"
       ],
       "plugins": [
-        ["transform-class-properties", { "spec": true }, "external-helpers"]
+        ["transform-class-properties", { "spec": true }]
       ]
     },
     "es": {
@@ -32,7 +32,7 @@
         "flow"
       ],
       "plugins": [
-        ["transform-class-properties", { "spec": true }, "external-helpers"]
+        ["transform-class-properties", { "spec": true }]
       ]
     },
     "cjs": {
@@ -50,7 +50,7 @@
         "flow"
       ],
       "plugins": [
-        ["transform-class-properties", { "spec": true }, "external-helpers"]
+        ["transform-class-properties", { "spec": true }]
       ]
     }
   }
