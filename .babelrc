@@ -1,12 +1,15 @@
 {
   "env": {
-    "test":{
+    "test": {
       "presets": [
-        ["env", {
-          "targets": {
-            "browsers":  ["last 2 versions"]
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": ["last 2 versions"]
+            }
           }
-        }],
+        ],
         "react",
         "flow"
       ],
@@ -14,14 +17,17 @@
         ["transform-class-properties", { "spec": true }, "external-helpers"]
       ]
     },
-    "es":{
+    "es": {
       "presets": [
-        ["env", {
-          "targets": {
-            "browsers":  ["last 2 versions"]
-          },
-          "modules": false
-        }],
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": ["last 2 versions"]
+            },
+            "modules": false
+          }
+        ],
         "react",
         "flow"
       ],
@@ -31,12 +37,15 @@
     },
     "cjs": {
       "presets": [
-        ["env", {
-          "targets": {
-            "browsers":  ["last 2 versions"]
-          },
-          "modules": false
-        }],
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": ["last 2 versions"]
+            },
+            "modules": false
+          }
+        ],
         "react",
         "flow"
       ],
