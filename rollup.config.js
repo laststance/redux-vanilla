@@ -8,7 +8,11 @@ const env = process.env.NODE_ENV
 const plugins = [
   flow({ pretty: true }),
   nodeResolve(),
-  babel({ exclude: 'node_modules/**' }),
+  babel({
+    exclude: 'node_modules/**',
+    plugins: ['external-helpers'],
+    externalHelpers: true
+  }),
   commonjs({
     namedExports: {
       'node_modules/prop-types/index.js': ['PropTypes']
