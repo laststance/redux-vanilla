@@ -97,8 +97,8 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
 
 "@types/node@*":
-  version "10.1.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.1.3.tgz#5c16980936c4e3c83ce64e8ed71fb37bd7aea135"
+  version "10.1.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.1.4.tgz#606651d3f8a8bec08b8cb262161aab9209f4a29d"
 
 abab@^1.0.4:
   version "1.0.4"
@@ -150,8 +150,8 @@ align-text@^0.1.1, align-text@^0.1.3:
     repeat-string "^1.5.2"
 
 all-contributors-cli@^4.11.1:
-  version "4.11.1"
-  resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-4.11.1.tgz#8e4d28a69bb60006b72d53758177a0c7b8a20f19"
+  version "4.11.2"
+  resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-4.11.2.tgz#b8bf1e1d08181be76ca4ebeb7869d3fdfbcf5557"
   dependencies:
     async "^2.0.0-rc.1"
     chalk "^2.3.0"
@@ -1033,8 +1033,8 @@ bser@^2.0.0:
     node-int64 "^0.4.0"
 
 buffer-from@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.0.0.tgz#4cb8832d23612589b0406e9e2956c17f06fdf531"
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.0.tgz#87fcaa3a298358e0ade6e442cfce840740d1ad04"
 
 builtin-modules@^1.0.0:
   version "1.1.1"
@@ -4233,8 +4233,8 @@ uglify-js@^2.6:
     uglify-to-browserify "~1.0.0"
 
 uglify-js@^3.3.25:
-  version "3.3.27"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.3.27.tgz#eb8c3c9429969f86ff5b0a2422ffc78c3cea8cc0"
+  version "3.3.28"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.3.28.tgz#0efb9a13850e11303361c1051f64d2ec68d9be06"
   dependencies:
     commander "~2.15.0"
     source-map "~0.6.1"
