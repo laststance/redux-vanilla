@@ -5437,7 +5437,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.0:
+prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.6.0, prop-types@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
@@ -5598,6 +5598,15 @@ react-dom@^16.3.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
+react-dom@^16.3.2:
+  version "16.4.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.0.tgz#099f067dd5827ce36a29eaf9a6cdc7cbf6216b1e"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+
 react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
@@ -5654,6 +5663,15 @@ react-scripts@^1.1.4:
 react@^16.3.0:
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.3.2.tgz#fdc8420398533a1e58872f59091b272ce2f91ea9"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+
+react@^16.3.2:
+  version "16.4.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.4.0.tgz#402c2db83335336fba1962c08b98c6272617d585"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
@@ -5747,9 +5765,14 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^0.4.2"
 
-redux-vanilla@^0.0.1-beta2:
-  version "0.0.1-beta2"
-  resolved "https://registry.yarnpkg.com/redux-vanilla/-/redux-vanilla-0.0.1-beta2.tgz#ad63921e0bb3b0bae6bb4204974686feb21575bc"
+redux-vanilla@^0.0.1-beta4:
+  version "0.0.1-beta4"
+  resolved "https://registry.yarnpkg.com/redux-vanilla/-/redux-vanilla-0.0.1-beta4.tgz#931ad132c36c45f1d800103c0a244c7752d3d5ae"
+  dependencies:
+    prop-types "^15.6.1"
+    react "^16.3.2"
+    react-dom "^16.3.2"
+    redux "^4.0.0"
 
 redux@^4.0.0:
   version "4.0.0"

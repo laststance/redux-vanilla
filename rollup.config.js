@@ -10,8 +10,7 @@ const plugins = [
   nodeResolve(),
   babel({
     exclude: 'node_modules/**',
-    plugins: ['external-helpers'],
-    externalHelpers: true
+    plugins: ['external-helpers']
   }),
   commonjs({
     namedExports: {
