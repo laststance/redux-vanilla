@@ -8,7 +8,9 @@ type Props = any
 type Context = {
   store: Store<any, any>
 }
-export const connect = (WrappedComponent: ComponentType<any>) =>
+export const connect = (
+  WrappedComponent: ComponentType<any>
+): ComponentType<any> =>
   class HigherOrderComponent extends Component<Props> {
     static contextTypes = {
       store: PropTypes.object
