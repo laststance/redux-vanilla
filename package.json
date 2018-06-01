@@ -14,7 +14,9 @@
   "homepage": "https://github.com/ryota-murakami/redux-vanilla#readme",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "types": "index.d.ts",
+  "typescript": {
+    "definition": "index.d.ts"
+  },
   "files": [
     "es",
     "lib",

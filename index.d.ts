@@ -1,17 +1,23 @@
 import * as React from 'react'
 import * as Redux  from 'redux'
 
-export interface ProviderProps {
+declare module ReduxVanilla {
+  export interface ProviderProps {
+    /**
+     * The single Redux store in your application.
+     */
+    store?: Redux.Store<any>;
+    children?: React.Node;
+  }
+
   /**
-   * The single Redux store in your application.
+   * Makes the Redux store available to the connect() calls in the component hierarchy below.
    */
-  store?: Store<any>;
-  children?: ReactNode;
+  export class Provider extends React.Component<ProviderProps, {}> { }
+
+  export  function connect(component: React.ComponetType<any>): React.ComponetType<any>
 }
 
-/**
- * Makes the Redux store available to the connect() calls in the component hierarchy below.
- */
-export class Provider extends React.Component<ProviderProps, {}> { }
-
-export function connect(component: React.ComponetType<any>)
+declare module "redux-vanilla" {
+  export = ReduxVanilla
+}
