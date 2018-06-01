@@ -38,7 +38,7 @@
     "codecov": "codecov -t $CODECOV_TOKEN",
     "build:commonjs": "NODE_ENV=cjs rollup -c -o lib/index.js",
     "build:es": "NODE_ENV=es rollup -c -o es/index.js",
-    "build": "yarn build:commonjs && yarn run build:es && yarn build:flow",
+    "build": "yarn build:commonjs && yarn build:es && yarn build:flow",
     "build:flow": "flow-copy-source -i *.test.js src es && flow-copy-source -i *.test.js src lib",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
