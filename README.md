@@ -32,6 +32,8 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+> Basically, you should use react-redux. This is my exercise module😜
+
 ## Motivation
 
 > if you use [react-redux](https://github.com/reactjs/react-redux) already, you can do almost exacty the same with: `connect((store) => store)(Component);` 
