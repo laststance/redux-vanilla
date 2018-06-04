@@ -43,7 +43,7 @@ export class Provider extends Component<Props, State> {
     props.store.subscribe(observer)
   }
 
-  isNotStoreRecived(props: Props) {
+  isNotStoreRecived(props: Props): boolean {
     const store = props.store
     if (store === undefined) return true
     if (typeof store !== 'object') return true
