@@ -1,12 +1,11 @@
 // @flow
 import { Component, Children } from 'react'
 import PropTypes from 'prop-types'
-import type { Element } from 'react'
 import type { Store } from 'redux'
 
 type Props = {
   store: Store<any, any>,
-  children: Element<any>
+  children: React$Node
 }
 type State = {
   listener: boolean

@@ -7,11 +7,13 @@
     "node": true
   },
   "plugins": [
-    "prettier"
+    "prettier",
+    "flowtype"
   ],
   "rules": {
     "prettier/prettier": ["error", {"singleQuote": true,"semi": false, "parser": "flow"}],
     "no-unused-vars": ["error"],
-    "react/prop-types": false
+    "react/prop-types": false,
+    "flowtype/define-flow-type": 1
   }
 }
