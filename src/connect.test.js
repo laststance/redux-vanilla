@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { connect } from './connect'
 import { Provider } from './Provider'
 import TestUtils from 'react-dom/test-utils'
-import { _createStore, type } from './testutils'
+import { _createStore } from './testutils'
 require('../jestSetup')
 
 describe('connect()', () => {
@@ -137,9 +137,9 @@ describe('connect()', () => {
       container
     )
     expect(container.firstChild.innerHTML).toBe('0 count')
-    store.dispatch({ type: type.INCREMENT })
+    store.dispatch({ type: 'INCREMENT' })
     expect(container.firstChild.innerHTML).toBe('1 count')
-    store.dispatch({ type: type.INCREMENT })
+    store.dispatch({ type: 'INCREMENT' })
     expect(container.firstChild.innerHTML).toBe('2 count')
   })
 })

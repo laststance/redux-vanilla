@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import TestUtils from 'react-dom/test-utils'
 import { Provider, connect } from './index'
-import { _createStore, type } from './testutils'
+import { _createStore } from './testutils'
 require('../jestSetup')
 
 describe('Integration Test', () => {
@@ -62,10 +62,10 @@ describe('Integration Test', () => {
     const child = TestUtils.findRenderedComponentWithType(instance, Child)
 
     expect(child.props.store.getState().count).toBe(0)
-    store.dispatch({ type: type.INCREMENT })
+    store.dispatch({ type: 'INCREMENT' })
 
     expect(child.props.store.getState().count).toBe(1)
-    store.dispatch({ type: type.INCREMENT })
+    store.dispatch({ type: 'INCREMENT' })
 
     expect(child.props.store.getState().count).toBe(2)
   })

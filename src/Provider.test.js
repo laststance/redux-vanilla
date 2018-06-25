@@ -1,7 +1,7 @@
 import React from 'react'
 import { Provider } from './Provider'
 import TestUtils from 'react-dom/test-utils'
-import { _createStore, type } from './testutils'
+import { _createStore } from './testutils'
 require('../jestSetup')
 
 describe('Provider', () => {
@@ -114,10 +114,10 @@ describe('Provider', () => {
     const provider = TestUtils.findRenderedComponentWithType(instance, Provider)
     expect(provider.state.reduxState).toEqual({ count: 0 })
 
-    store.dispatch({ type: type.INCREMENT })
+    store.dispatch({ type: 'INCREMENT' })
     expect(provider.state.reduxState).toEqual({ count: 1 })
 
-    store.dispatch({ type: type.INCREMENT })
+    store.dispatch({ type: 'INCREMENT' })
     expect(provider.state.reduxState).toEqual({ count: 2 })
   })
 })
