@@ -16,8 +16,7 @@ export class Provider extends Component<Props, State> {
       subscribe: PropTypes.func.isRequired,
       dispatch: PropTypes.func.isRequired,
       getState: PropTypes.func.isRequired
-    }),
-    listener: PropTypes.bool
+    })
   }
 
   state = {
