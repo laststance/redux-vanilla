@@ -1,5 +1,6 @@
 import { createStore } from 'redux'
 
+// TODO refactor
 const INCREMENT = 'INCREMENT'
 
 export const type = {
@@ -8,7 +9,7 @@ export const type = {
 
 const initialState = { count: 0 }
 
-const reducer = (state, action) => {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case INCREMENT:
       return { count: state.count + 1 }

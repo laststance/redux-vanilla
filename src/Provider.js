@@ -8,7 +8,7 @@ type Props = {
   children: React$Node
 }
 type State = {
-  listener: boolean
+  reduxState: any
 }
 export class Provider extends Component<Props, State> {
   static childContextTypes = {
@@ -21,7 +21,7 @@ export class Provider extends Component<Props, State> {
   }
 
   state = {
-    listener: false
+    reduxState: {}
   }
 
   getChildContext() {
@@ -37,8 +37,9 @@ export class Provider extends Component<Props, State> {
         'Redux Vanilla: <Provider /> is not given `store` props. you have to pass Redux store as a props. i.e. <Provider store={store}><App /></Provider>'
       )
     }
+    this.state = { reduxState: props.store.getState() }
 
-    const observer = () => this.setState({ listener: !this.state.listener })
+    const observer = () => this.setState({ reduxState: props.store.getState() })
     props.store.subscribe(observer)
   }
 
