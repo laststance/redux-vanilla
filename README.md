@@ -63,19 +63,7 @@ class App extends Component {
 export defaunt connect(App)
 ```
 
-this means you can take a **raw Redux from props.**:tada:  
-without too massive Redux Pattarn, Practice combination, such as fllowing.
-
-- Directory Structure
-- File Separation
-- ActionCreator
-- MapStore..Uh-oh! MapStateToProps, MapDispatchToProps
-- like redux-thunk/redux-saga like middlewares alongside how to async handle
-
-anyway, **Redux itself is not difficult.**  
-but **massive Redux Pattarn, Practice combination is obviously overkill for beginner.**
-
-The purpose of `Redux Vanilla` is facilitate gaining Redux(Flux Dataflow) benefit, without every around complexity. 
+this means you can take a **raw Redux from props.**:tada:
 
 ## install
 - reuqirement: react redux
