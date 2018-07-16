@@ -1,6 +1,6 @@
 {
   "name": "redux-vanilla",
-  "version": "0.0.1-beta5",
+  "version": "0.0.1-beta6",
   "description": "Zero Abstraction React Redux binding library",
   "repository": {
     "type": "git",
