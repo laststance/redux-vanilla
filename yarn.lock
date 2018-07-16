@@ -391,7 +391,11 @@ babel-core@^6.0.0, babel-core@^6.26.0:
     slash "^1.0.0"
     source-map "^0.5.7"
 
+<<<<<<< HEAD
 babel-eslint@^8.2.2:
+=======
+babel-eslint@^8.2.6:
+>>>>>>> df64dce5b21410cbb857b79174e980102984d9c3
   version "8.2.6"
   resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-8.2.6.tgz#6270d0c73205628067c0f7ae1693a9e797acefd9"
   dependencies:
@@ -524,7 +528,11 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
+<<<<<<< HEAD
 babel-jest@^23.0.0, babel-jest@^23.4.0:
+=======
+babel-jest@^23.4.0:
+>>>>>>> df64dce5b21410cbb857b79174e980102984d9c3
   version "23.4.0"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-23.4.0.tgz#22c34c392e2176f6a4c367992a7fcff69d2e8557"
   dependencies:
@@ -1209,6 +1217,10 @@ cliui@^4.0.0:
     strip-ansi "^4.0.0"
     wrap-ansi "^2.0.0"
 
+clorox@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/clorox/-/clorox-1.0.3.tgz#6fa63653f280c33d69f548fb14d239ddcfa1590d"
+
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
@@ -1217,7 +1229,11 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
+<<<<<<< HEAD
 codecov@^3.0.0:
+=======
+codecov@^3.0.4:
+>>>>>>> df64dce5b21410cbb857b79174e980102984d9c3
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/codecov/-/codecov-3.0.4.tgz#37f2bf9ed71086923aac7496d982e32e5899dfd8"
   dependencies:
@@ -1502,13 +1518,21 @@ escodegen@^1.9.0:
   optionalDependencies:
     source-map "~0.6.1"
 
+<<<<<<< HEAD
 eslint-plugin-flowtype@^2.49.3:
+=======
+eslint-plugin-flowtype@^2.50.0:
+>>>>>>> df64dce5b21410cbb857b79174e980102984d9c3
   version "2.50.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-2.50.0.tgz#953e262fa9b5d0fa76e178604892cf60dfb916da"
   dependencies:
     lodash "^4.17.10"
 
+<<<<<<< HEAD
 eslint-plugin-prettier@^2.6.0:
+=======
+eslint-plugin-prettier@^2.6.2:
+>>>>>>> df64dce5b21410cbb857b79174e980102984d9c3
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-2.6.2.tgz#71998c60aedfa2141f7bfcbf9d1c459bf98b4fad"
   dependencies:
@@ -1546,7 +1570,11 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
+<<<<<<< HEAD
 eslint@^5.0.0:
+=======
+eslint@^5.1.0:
+>>>>>>> df64dce5b21410cbb857b79174e980102984d9c3
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.1.0.tgz#2ed611f1ce163c0fb99e1e0cda5af8f662dff645"
   dependencies:
@@ -1855,7 +1883,11 @@ flow-bin@^0.76.0:
   version "0.76.0"
   resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.76.0.tgz#eb00036991c3abc106743fcbc7ee321f02aa4faa"
 
+<<<<<<< HEAD
 flow-copy-source@^2.0.0:
+=======
+flow-copy-source@^2.0.1:
+>>>>>>> df64dce5b21410cbb857b79174e980102984d9c3
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/flow-copy-source/-/flow-copy-source-2.0.1.tgz#249781585035ff8d9d35e5372b73af21996ee2af"
   dependencies:
@@ -2826,7 +2858,11 @@ jest-worker@^23.2.0:
   dependencies:
     merge-stream "^1.0.1"
 
+<<<<<<< HEAD
 jest@^23.0.1:
+=======
+jest@^23.4.1:
+>>>>>>> df64dce5b21410cbb857b79174e980102984d9c3
   version "23.4.1"
   resolved "https://registry.yarnpkg.com/jest/-/jest-23.4.1.tgz#39550c72f3237f63ae1b434d8d122cdf6fa007b6"
   dependencies:
@@ -3571,7 +3607,11 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
+<<<<<<< HEAD
 prettier@^1.11.1:
+=======
+prettier@^1.13.7:
+>>>>>>> df64dce5b21410cbb857b79174e980102984d9c3
   version "1.13.7"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.13.7.tgz#850f3b8af784a49a6ea2d2eaa7ed1428a34b7281"
 
@@ -3601,10 +3641,17 @@ promise@^7.1.1:
     asap "~2.0.3"
 
 prompts@^0.1.9:
+<<<<<<< HEAD
   version "0.1.12"
   resolved "https://registry.yarnpkg.com/prompts/-/prompts-0.1.12.tgz#39dc42de7d2f0ec3e2af76bf40713fcb8726090d"
   dependencies:
     kleur "^1.0.0"
+=======
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/prompts/-/prompts-0.1.10.tgz#832cbf6116ecb121d6884e84643bb2cf92b3ed2c"
+  dependencies:
+    clorox "^1.0.3"
+>>>>>>> df64dce5b21410cbb857b79174e980102984d9c3
     sisteransi "^0.1.1"
 
 prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
@@ -3906,7 +3953,11 @@ rimraf@^2.2.8, rimraf@^2.5.4, rimraf@^2.6.1:
   dependencies:
     glob "^7.0.5"
 
+<<<<<<< HEAD
 rollup-plugin-babel@^3.0.3:
+=======
+rollup-plugin-babel@^3.0.7:
+>>>>>>> df64dce5b21410cbb857b79174e980102984d9c3
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/rollup-plugin-babel/-/rollup-plugin-babel-3.0.7.tgz#5b13611f1ab8922497e9d15197ae5d8a23fe3b1e"
   dependencies:
