@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from 'react'
 import type { Store } from 'redux'
-import { ReactReduxContext } from './'
+import ReactReduxContext from './ReactReduxContext'
 
 type Context =
   | {
