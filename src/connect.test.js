@@ -26,26 +26,6 @@ describe('connect()', () => {
     )
   })
 
-  it('can get store from context', () => {
-    const store = _createStore()
-    class Child extends Component {
-      render() {
-        return <div />
-      }
-    }
-    const ConnectedChild = connect(Child)
-    const instance = TestUtils.renderIntoDocument(
-      <Provider store={store}>
-        <ConnectedChild />
-      </Provider>
-    )
-    const higherOrderComponent = TestUtils.findRenderedComponentWithType(
-      instance,
-      ConnectedChild
-    )
-    expect(higherOrderComponent.context.store).toBe(store)
-  })
-
   it('pass store as props to connected Component', () => {
     const store = _createStore()
     class Child extends Component {
@@ -118,7 +98,9 @@ describe('connect()', () => {
 
   it('work when passing SFC', () => {
     const store = _createStore()
-    const Child = props => <h1>{props.store.getState().count} count</h1>
+    const Child = props => {
+      return <h1>{props.store.getState().count} count</h1>
+    }
 
     const ConnectedChild = connect(Child)
     expect(() => {

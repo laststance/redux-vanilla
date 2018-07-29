@@ -1,45 +1,45 @@
 // @flow
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 import type { ComponentType } from 'react'
 import type { Store } from 'redux'
+import { ReactReduxContext } from './'
 
 type Props = any
-type Context = {
-  store: Store<any, any>
-}
+type Context =
+  | {
+      store: Store,
+      storeState: any
+    }
+  | typeof undefined
+
 export const connect = (
   WrappedComponent: ComponentType<any>
 ): ComponentType<any> =>
   class HigherOrderComponent extends Component<Props> {
-    static contextTypes = {
-      store: PropTypes.object
-    }
-
-    store: Store<any, any>
-
-    constructor(props: Props, context: Context) {
-      super(props, context)
-      if (context.store === undefined) {
+    handleConsumer = (context: Context) => {
+      if (context === undefined) {
         throw new Error(
           'Redux Vanilla: connect() was used without <Provider />. you have to define <Provider /> Parent Component. higher than connect() Child Component'
         )
       }
-      this.store = context.store
-    }
 
-    render() {
-      const store = this.store
-      const state = store.getState()
-      const dispatch = store.dispatch
+      const { store, storeState } = context
 
       return (
         <WrappedComponent
           store={store}
-          state={state}
-          dispatch={dispatch}
+          state={storeState}
+          dispatch={store.dispatch}
           {...this.props}
         />
+      )
+    }
+
+    render() {
+      return (
+        <ReactReduxContext.Consumer>
+          {this.handleConsumer}
+        </ReactReduxContext.Consumer>
       )
     }
   }

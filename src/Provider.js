@@ -1,32 +1,20 @@
 // @flow
-import { Component, Children } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component, Children } from 'react'
 import type { Store } from 'redux'
+import { ReactReduxContext } from './'
 
 type Props = {
   store: Store<any, any>,
   children: React$Node
 }
 type State = {
-  reduxState: any
+  store: Store,
+  storeState: any
 }
 export class Provider extends Component<Props, State> {
-  static childContextTypes = {
-    store: PropTypes.shape({
-      subscribe: PropTypes.func.isRequired,
-      dispatch: PropTypes.func.isRequired,
-      getState: PropTypes.func.isRequired
-    })
-  }
-
   state = {
-    reduxState: {}
-  }
-
-  getChildContext() {
-    return {
-      store: this.props.store
-    }
+    store: {},
+    storeState: {}
   }
 
   constructor(props: Props) {
@@ -36,10 +24,11 @@ export class Provider extends Component<Props, State> {
         'Redux Vanilla: <Provider /> is not given `store` props. you have to pass Redux store as a props. i.e. <Provider store={store}><App /></Provider>'
       )
     }
-    this.state = { reduxState: props.store.getState() }
 
-    const observer = () => this.setState({ reduxState: props.store.getState() })
+    const observer = () => this.setState({ storeState: props.store.getState() })
     props.store.subscribe(observer)
+
+    this.state = { store: props.store, storeState: props.store.getState() }
   }
 
   isNotStoreRecived(props: Props): boolean {
@@ -54,6 +43,10 @@ export class Provider extends Component<Props, State> {
   }
 
   render() {
-    return Children.only(this.props.children)
+    return (
+      <ReactReduxContext.Provider value={this.state}>
+        {Children.only(this.props.children)}
+      </ReactReduxContext.Provider>
+    )
   }
 }

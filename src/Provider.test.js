@@ -112,12 +112,13 @@ describe('Provider', () => {
       </Provider>
     )
     const provider = TestUtils.findRenderedComponentWithType(instance, Provider)
-    expect(provider.state.reduxState).toEqual({ count: 0 })
+
+    expect(provider.state.storeState).toEqual({ count: 0 })
 
     store.dispatch({ type: 'INCREMENT' })
-    expect(provider.state.reduxState).toEqual({ count: 1 })
+    expect(provider.state.storeState).toEqual({ count: 1 })
 
     store.dispatch({ type: 'INCREMENT' })
-    expect(provider.state.reduxState).toEqual({ count: 2 })
+    expect(provider.state.storeState).toEqual({ count: 2 })
   })
 })
