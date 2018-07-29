@@ -1,6 +1,5 @@
 // @flow
 import React, { Component } from 'react'
-import type { ComponentType } from 'react'
 import type { Store } from 'redux'
 import { ReactReduxContext } from './'
 
@@ -12,8 +11,8 @@ type Context =
   | typeof undefined
 
 export const connect = (
-  WrappedComponent: ComponentType<any>
-): ComponentType<any> =>
+  WrappedComponent: React$ComponentType<any>
+): React$ComponentType<any> =>
   class HigherOrderComponent extends Component<{}> {
     handleConsumer = (context: Context): React$Node => {
       if (context === undefined) {
