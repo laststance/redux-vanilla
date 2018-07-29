@@ -4,7 +4,6 @@ import type { ComponentType } from 'react'
 import type { Store } from 'redux'
 import { ReactReduxContext } from './'
 
-type Props = any
 type Context =
   | {
       store: Store,
@@ -15,7 +14,7 @@ type Context =
 export const connect = (
   WrappedComponent: ComponentType<any>
 ): ComponentType<any> =>
-  class HigherOrderComponent extends Component<Props> {
+  class HigherOrderComponent extends Component<{}> {
     handleConsumer = (context: Context) => {
       if (context === undefined) {
         throw new Error(
