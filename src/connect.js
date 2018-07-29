@@ -15,7 +15,7 @@ export const connect = (
   WrappedComponent: ComponentType<any>
 ): ComponentType<any> =>
   class HigherOrderComponent extends Component<{}> {
-    handleConsumer = (context: Context) => {
+    handleConsumer = (context: Context): React$Node => {
       if (context === undefined) {
         throw new Error(
           'Redux Vanilla: connect() was used without <Provider />. you have to define <Provider /> Parent Component. higher than connect() Child Component'
