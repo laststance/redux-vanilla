@@ -86,7 +86,6 @@
     "rollup-plugin-uglify": "^4.0.0"
   },
   "dependencies": {
-    "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "redux": "^4.0.0"
