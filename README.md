@@ -99,10 +99,7 @@ const reducer = (state, action) => {
 
 const store = createStore(
   reducer,
-  initialState,
-  window.__REDUX_DEVTOOLS_EXTENSION__ !== undefined
-    ? window.__REDUX_DEVTOOLS_EXTENSION__()
-    : f => f
+  initialState
 )
 
 // 1. SetUp Provider with Redux store
