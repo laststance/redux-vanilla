@@ -75,7 +75,7 @@
     "eslint-plugin-react": "^7.11.1",
     "flow-bin": "^0.76.0",
     "flow-copy-source": "^2.0.2",
-    "jest": "^23.5.0",
+    "jest": "^23.6.0",
     "prettier": "^1.14.2",
     "regenerator-runtime": "^0.12.1",
     "rollup": "^0.62.0",
