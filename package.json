@@ -68,7 +68,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "codecov": "^3.1.0",
+    "codecov": "^3.0.4",
     "eslint": "^5.5.0",
     "eslint-plugin-flowtype": "^2.50.0",
     "eslint-plugin-prettier": "^2.6.2",
@@ -86,7 +86,7 @@
     "rollup-plugin-uglify": "^4.0.0"
   },
   "dependencies": {
-    "react": "^16.4.2",
+    "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "redux": "^4.0.0"
   }
