@@ -150,7 +150,7 @@ class App extends Component {
 export default connect(App)
 ```
 
-the repository contain [example](https://github.com/ryota-murakami/redux-vanilla/tree/master/example) and published [Live Demo](https://codesandbox.io/s/92rq9mn71r):computer:  
+the repository contain [example](https://github.com/ryota-murakami/redux-vanilla/tree/master/example) and published [Live Demo](https://redux-vanilla.netlify.com/):computer:  
 you could see [redux-devtools chrome extention](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=ja) on the page.
 
 ## API
