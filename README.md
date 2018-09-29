@@ -65,7 +65,7 @@ export defaunt connect(App)
 
 this means you can take a **raw Redux from props.**:tada:
 
-## install
+## Install
 - reuqirement: `react` `redux`
 ```
 yarn add react redux redux-vanilla
