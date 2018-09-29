@@ -1,0 +1,7 @@
+[Settings]
+  ID = "frosty-jennings-c285b3"
+
+[build]
+  base  = "example"
+  publish = "example/build"
+  command = "yarn build"
