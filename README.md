@@ -7,7 +7,6 @@
 <p align="center">
 <a href="https://badge.fury.io/js/redux-vanilla"><img src="https://badge.fury.io/js/redux-vanilla.svg" alt="npm version" height="18"></a>
 <a href="https://circleci.com/gh/ryota-murakami/redux-vanilla" rel="nofollow"><img src="https://camo.githubusercontent.com/959670902fe42ffc7a987e5988407d2db8e58ec3/68747470733a2f2f636972636c6563692e636f6d2f67682f72796f74612d6d7572616b616d692f72656475782d76616e696c6c612e7376673f7374796c653d737667" alt="CircleCI" data-canonical-src="https://circleci.com/gh/ryota-murakami/redux-vanilla.svg?style=svg" style="max-width:100%;"></a>
-<a href="http://makeapullrequest.com" rel="nofollow"><img src="https://camo.githubusercontent.com/a34cfbf37ba6848362bf2bee0f3915c2e38b1cc1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5052732d77656c636f6d652d627269676874677265656e2e7376673f7374796c653d666c61742d737175617265" alt="PRs Welcome" data-canonical-src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" style="max-width:100%;"></a>
 <a href="https://github.com/facebook/jest"><img src="https://camo.githubusercontent.com/665df681e8f100f94bde7716561b73d1552888ca/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f7465737465645f776974682d6a6573742d3939343234662e737667" alt="tested with jest" data-canonical-src="https://img.shields.io/badge/tested_with-jest-99424f.svg" style="max-width:100%;"></a>
 <a href="https://github.com/prettier/prettier"><img src="https://camo.githubusercontent.com/c83b8df34339bd302b7fd3fbb631f99ba25f87f8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64655f7374796c652d70726574746965722d6666363962342e737667" alt="code style: prettier" data-canonical-src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" style="max-width:100%;"></a>
 <a href="https://codecov.io/gh/ryota-murakami/redux-vanilla" rel="nofollow"><img src="https://camo.githubusercontent.com/bb5967dbca9dfe8c5148a08dadff95dd3697d5a1/68747470733a2f2f636f6465636f762e696f2f67682f72796f74612d6d7572616b616d692f72656475782d76616e696c6c612f6272616e63682f6d61737465722f67726170682f62616467652e737667" alt="codecov" data-canonical-src="https://codecov.io/gh/ryota-murakami/redux-vanilla/branch/master/graph/badge.svg" style="max-width:100%;"></a>
@@ -32,7 +31,13 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-> Basically, you should use react-redux. This is my exercise module😜
+## ⚠️ disclaimer
+Don't use in production, this is a experimental package.
+
+## Why
+- for my experiment of development npm
+- I wanted to know how to work [react-redux](https://github.com/reduxjs/react-redux) through reinventing the wheel
+- I wanted to get raw Redux store in React Component
 
 ## Motivation
 
@@ -63,7 +68,7 @@ class App extends Component {
 export defaunt connect(App)
 ```
 
-this means you can take a **raw Redux from props.**:tada:
+this means you can get a **raw Redux from props.**:tada:
 
 ## Install
 - reuqirement: `react` `redux`
