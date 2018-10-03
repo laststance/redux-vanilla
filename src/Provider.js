@@ -1,17 +1,14 @@
 // @flow
-import React, { Component, Children } from 'react'
+import React, { Children, Component } from 'react'
 import type { Store } from 'redux'
+import type { Context } from './ReactReduxContext'
 import ReactReduxContext from './ReactReduxContext'
 
 type Props = {
   store: Store<any, any>,
   children: React$Node
 }
-type State = {
-  store: Store,
-  storeState: any
-}
-export class Provider extends Component<Props, State> {
+export class Provider extends Component<Props, Context> {
   state = {
     store: {},
     storeState: {}
