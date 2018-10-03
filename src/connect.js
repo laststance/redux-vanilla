@@ -1,14 +1,7 @@
 // @flow
 import React, { Component } from 'react'
-import type { Store } from 'redux'
+import type { Context } from './ReactReduxContext'
 import ReactReduxContext from './ReactReduxContext'
-
-type Context =
-  | {
-      store: Store,
-      storeState: any
-    }
-  | typeof undefined
 
 export const connect = (
   WrappedComponent: React$ComponentType<any>
