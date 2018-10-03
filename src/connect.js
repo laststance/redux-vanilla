@@ -13,7 +13,7 @@ type Context =
 export const connect = (
   WrappedComponent: React$ComponentType<any>
 ): React$ComponentType<any> =>
-  class HigherOrderComponent extends Component<{}> {
+  class HigherOrderComponent extends Component<{||}> {
     handleConsumer = (context: Context): React$Node => {
       if (context === undefined) {
         throw new Error(
