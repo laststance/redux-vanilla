@@ -19,8 +19,10 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
+- [⚠️  Disclaimer](#--disclaimer)
+- [Why](#why)
 - [Motivation](#motivation)
-- [install](#install)
+- [Install](#install)
 - [Usage](#usage)
 - [API](#api)
   - [`<Provider store={Store>} />`](#provider-storestore-)
@@ -31,7 +33,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## ⚠️ disclaimer
+## ⚠️  Disclaimer
 Don't use in production, this is a experimental package.
 
 ## Why
