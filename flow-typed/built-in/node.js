@@ -1381,6 +1381,7 @@ declare class net$Server extends events$EventEmitter {
   listen(port?: number, hostname?: string, backlog?: number, callback?: Function): net$Server;
   listen(path: string, callback?: Function): net$Server;
   listen(handle: Object, callback?: Function): net$Server;
+  listening: boolean;
   close(callback?: Function): net$Server;
   address(): net$Socket$address;
   connections: number;
@@ -2146,6 +2147,11 @@ declare module 'repl' {
 
 /* globals: https://nodejs.org/api/globals.html */
 
+type process$CPUUsage = {
+  user: number,
+  system: number
+}
+
 declare class Process extends events$EventEmitter {
   abort() : void;
   arch : string;
@@ -2153,6 +2159,7 @@ declare class Process extends events$EventEmitter {
   chdir(directory : string) : void;
   config : Object;
   connected : boolean;
+  cpuUsage(previousValue?: process$CPUUsage) : process$CPUUsage;
   cwd() : string;
   disconnect? : () => void;
   domain? : domain$Domain;
