@@ -123,9 +123,8 @@ App/index.js
 ```js
 import React, { Component } from 'react'
 import { connect } from 'redux-vanilla'
-import { Container, Secton } from './layout'
-import { Header, Footer } from './component'
-import { UpVoteCount, DownVoteCount, UpVoteBtn, DownVoteBtn } from './element'
+import { Container } from './layout'
+import { Header, Footer, Row, Button } from './component'
 
 class App extends Component {
   render() {
