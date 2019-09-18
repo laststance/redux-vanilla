@@ -25,7 +25,7 @@
 - [Install](#install)
 - [Usage](#usage)
 - [API](#api)
-  - [`<Provider store={Store>} />`](#provider-storestore-)
+  - [`<Provider store={Store} />`](#provider-storestore-)
   - [`connect(component: ComponentType<any>)`](#connectcomponent-componenttypeany)
 - [Inspiration](#inspiration)
 - [Contributors](#contributors)
@@ -161,7 +161,7 @@ you could see [redux-devtools chrome extention](https://chrome.google.com/websto
 
 ## API
 
-### `<Provider store={Store>} />`
+### `<Provider store={Store} />`
 
 use as Parent Component against connect Component.
 `store` only accept redux `createStore()` return Object.  
